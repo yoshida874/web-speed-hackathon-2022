@@ -1,7 +1,7 @@
-import { without, range } from "lodash-es";
 import React, { useCallback, useState } from "react";
 import styled from "styled-components";
 
+import { range, without } from "../../../../../../../../scripts/common";
 import { BaseButton } from "../../../../../components/buttons/BaseButton";
 import { Spacer } from "../../../../../components/layouts/Spacer";
 import { Stack } from "../../../../../components/layouts/Stack";

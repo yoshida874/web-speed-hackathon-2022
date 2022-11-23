@@ -1,9 +1,10 @@
-import { sample } from "lodash-es";
 import moment from "moment-timezone";
 import { v4 as uuid } from "uuid";
 
 import { Race } from "../src/model/index.js";
 import { createConnection } from "../src/server/typeorm/connection.js";
+
+import { sample } from "./common";
 
 export async function insertRaces(startDate, endDate) {
   const connection = await createConnection();

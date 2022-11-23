@@ -1,8 +1,10 @@
-import { random, shuffle, fill, sample } from "lodash-es";
+import { fill, shuffle } from "lodash-es";
 import { v4 as uuid } from "uuid";
 
 import { Player, Race, RaceEntry } from "../src/model/index.js";
 import { createConnection } from "../src/server/typeorm/connection.js";
+
+import { random, sample } from "./common";
 
 export async function insertRaceEntries() {
   process.stdout.write("Creating race entries...");

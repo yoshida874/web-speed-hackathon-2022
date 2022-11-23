@@ -1,8 +1,9 @@
-import { random } from "lodash-es";
 import { v4 as uuid } from "uuid";
 
 import { OddsItem, Race, RaceEntry } from "../src/model/index.js";
 import { createConnection } from "../src/server/typeorm/connection.js";
+
+import { random } from "./common";
 
 export async function insertOddsItems() {
   process.stdout.write("Creating odds items...");
