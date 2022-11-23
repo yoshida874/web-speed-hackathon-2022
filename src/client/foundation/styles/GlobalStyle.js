@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: "Senobi-Gothic";
     font-weight: bold;
-    font-display: swap;
+    font-display: block;
     src: url("/assets/fonts/MODI_Senobi-Gothic_2017_0702/Senobi-Gothic-Bold.woff2") format("woff2");
   }
 `;
