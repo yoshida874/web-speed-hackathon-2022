@@ -4,8 +4,10 @@
   "license": "MPL-2.0",
   "author": "dora <31735614+dora1998@users.noreply.github.com>",
   "scripts": {
-    "build": "webpack",
-    "build:watch": "yarn build --watch --progress",
+    "build": "yarn build:server && webpack --config webpack.prod.js",
+    "build:server": "webpack --config webpack.server.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:watch": "yarn build:dev --watch --progress",
     "serve": "node --enable-source-maps dist/server.js",
     "serve:dev": "wait-on dist/server.js && NODE_OPTIONS=--enable-source-maps nodemon dist/server.js",
     "dev": "npm-run-all -s clean -p build:watch serve:dev",
@@ -88,6 +90,7 @@
     "styled-components": "^5.3.3",
     "typeorm": "^0.2.44",
     "uuid": "^8.3.2",
+    "webpack-merge": "^5.8.0",
     "zengin-code": "^1.0.0-p20220130"
   },
   "engines": {
