@@ -1,8 +1,7 @@
-import { sortBy } from "lodash/sortBy";
-import { take } from "lodash/take";
 import React from "react";
 import styled from "styled-components";
 
+import { sortBy, take } from "../../../../../../../../scripts/common";
 import { BaseButton } from "../../../../../components/buttons/BaseButton";
 import { EntryCombination } from "../../../../../components/displays/EntryCombination";
 import { Stack } from "../../../../../components/layouts/Stack";
@@ -67,10 +66,7 @@ const RankNo = styled.div`
 
 /** @type {React.VFC<Props>} */
 export const OddsRankingList = ({ isRaceClosed, odds, onClickOdds }) => {
-  const sortedOdds = take(
-    sortBy(odds, (item) => item.odds),
-    50,
-  );
+  const sortedOdds = take(sortBy(odds, "odds"), 50);
 
   return (
     <Wrapper>
