@@ -1,4 +1,5 @@
-import { fill, shuffle } from "lodash-es";
+import { fill } from "lodash/fill";
+import { shuffle } from "lodash/shuffle";
 import { v4 as uuid } from "uuid";
 
 import { Player, Race, RaceEntry } from "../src/model/index.js";

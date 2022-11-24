@@ -22,3 +22,11 @@ export const without = (array, key) => {
     return value !== key;
   });
 };
+
+export const sortBy = (items, key) => {
+  return [...items].sort((a, b) => (a[key] < b[key] ? -1 : 1));
+};
+
+export const take = (arr, qty = 1) => {
+  return [...arr].splice(0, qty);
+};
