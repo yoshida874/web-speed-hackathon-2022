@@ -48,7 +48,7 @@ const RaceTitle = styled.h2`
 const Item = ({ race }) => {
   const [closeAtText, setCloseAtText] = useState(formatCloseAt(race.closeAt));
   const imgName = race.image.match(/([0-9]{3,})/);
-  const imgUrl = `/assets/images/races/${imgName[0]}.webp`;
+  const imgUrl = `/assets/images/races/100x100/${imgName[0]}.webp`;
 
   // 締切はリアルタイムで表示したい
   useEffect(() => {
