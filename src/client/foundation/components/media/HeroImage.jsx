@@ -8,14 +8,13 @@ import React from "react";
  */
 
 /** @type {React.VFC<Props>} */
-export const HeroImage = ({ height, src, width }) => {
+export const HeroImage = ({ src }) => {
   return (
     <img
-      height={height}
-      loading="lazy"
+      height={225}
       src={src}
-      style={{ aspectRatio: "16 / 9", height: "auto", width: "100%" }}
-      width={width}
+      style={{ aspectRatio: "16 / 9", height: "auto", maxWidth: "100%" }}
+      width={400}
     />
   );
 };

@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { Container } from "../../../components/layouts/Container";
 import { Section } from "../../../components/layouts/Section";
 import { Spacer } from "../../../components/layouts/Spacer";
-import { TrimmedImage } from "../../../components/media/TrimmedImage";
+import { HeroImage } from "../../../components/media/HeroImage";
 import { TabNav } from "../../../components/navs/TabNav";
 import { Heading } from "../../../components/typographies/Heading";
 import { useFetch } from "../../../hooks/useFetch";
@@ -76,11 +76,7 @@ export const Odds = () => {
       <Section dark shrink>
         <LiveBadge>Live</LiveBadge>
         <Spacer mt={Space * 2} />
-        <TrimmedImage
-          height={225}
-          src={`${data.image.slice(0, -4)}.avif`}
-          width={400}
-        />
+        <HeroImage src={`${data.image.slice(0, -4)}.avif`} />
       </Section>
 
       <Spacer mt={Space * 2} />
