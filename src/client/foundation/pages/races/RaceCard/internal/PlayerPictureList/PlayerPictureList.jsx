@@ -30,7 +30,7 @@ const Item = ({ image, name, number }) => {
       <img
         alt={`${name}選手のプロフィール写真`}
         height={100}
-        src={`${image.slice(0, -4)}.avif`}
+        src={`${image.slice(0, -4)}.webp`}
         width={100}
       />
 
