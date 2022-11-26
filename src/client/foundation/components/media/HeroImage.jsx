@@ -12,7 +12,6 @@ export const HeroImage = ({ src }) => {
   return (
     <img
       height={225}
-      loading="lazy"
       src={src}
       style={{ aspectRatio: "16 / 9", height: "auto", maxWidth: "100%" }}
       width={400}

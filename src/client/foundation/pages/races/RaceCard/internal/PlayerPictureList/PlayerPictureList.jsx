@@ -30,7 +30,6 @@ const Item = ({ image, name, number }) => {
       <img
         alt={`${name}選手のプロフィール写真`}
         height={100}
-        loading="lazy"
         src={`${image.slice(0, -4)}.avif`}
         width={100}
       />
