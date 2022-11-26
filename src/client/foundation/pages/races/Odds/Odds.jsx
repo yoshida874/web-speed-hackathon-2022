@@ -58,7 +58,11 @@ export const Odds = () => {
   );
 
   if (data == null) {
-    return <Container>Loading...</Container>;
+    return (
+      <div style={{ minHeight: "100vh" }}>
+        <Container>Loading...</Container>
+      </div>
+    );
   }
 
   const isRaceClosed = moment(data.closeAt).isBefore(new Date());
