@@ -17,9 +17,9 @@ export const HeroImage = ({ url }) => {
   return (
     <Image
       alt=""
-      className={{ height: "auto", width: "100%" }}
       height={735}
       src={url}
+      style={{ height: "auto", width: "100%" }}
       width={1024}
     />
   );
